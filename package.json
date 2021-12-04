@@ -1,0 +1,26 @@
+{
+  "name": "smartpaycode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "co-mysql": "^1.0.0",
+    "koa": "^2.13.4",
+    "koa-better-body": "^3.3.9",
+    "koa-ejs": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "koa-session": "^6.2.0",
+    "koa-static": "^5.0.0",
+    "mysql": "^2.18.1"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "lodash": "^4.17.21"
+  }
+}

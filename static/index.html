@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://localhost:8080/api/getResult" method="post" enctype="multipart/form-data">
+    <span style="color: red">*</span>Industry:<input type="text" name="industry" required/><br>
+    <span style="color: red">*</span>TransactionVolume:<input type="number" name="transactionVolume" required/><br>
+    <span style="color: red">*</span>TransactionCount:<input type="text" name="transactionCount" required/><br>
+    <span style="color: red">*</span>CSV File:<input type="file" name="csv_file" accept=".csv" required/><br>
+    <input type="submit" name="submit"/><br>
+</form>
+</body>
+</html>

@@ -81,7 +81,11 @@ getTransactionCountPrice = async (arr, industry, transactionCount) => {
 
     //Find 2 points
     const targetIndex = sortedArray.findIndex((item, index) => {
-        return item.Value < transactionCount && sortedArray[index + 1].Value > transactionCount;
+        try {
+            return item.Value <= transactionCount && sortedArray[index + 1].Value >= transactionCount;
+        }catch (e) {
+            throw new Error("TransactionCount invalid");
+        }
     })
 
     //calculate
